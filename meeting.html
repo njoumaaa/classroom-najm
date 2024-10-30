@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Page</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: -40px;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            background-color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            height: 70px;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+        h1 {
+            color: #fff;
+            margin-left: 40px;
+            margin-bottom: -20px;
+        }
+
+        .meeting-container {
+            max-width: 800px;
+            margin-left: 300px;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .meeting-card {
+            flex-basis: calc(33.333% - 2rem);
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .meeting-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .meeting-card p {
+            margin: 0;
+        }
+
+        @media (max-width: 1100px) {
+            .meeting-card {
+                flex-basis: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .meeting-card {
+                flex-basis: 100%;
+            }
+        }
+        .dot {
+        height: 70px;
+        width: 70px;
+        background-color: #4caf50;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: -80px;
+        float: right;
+        margin-right: 80px;
+      }
+
+button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    opacity: 0;
+}
+      .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: white;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: -80px;
+        float: right;
+        margin-right: 80px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discussion</h1>
+        <nav>      
+            <a href="acceuil.html">Acceuil</a>
+            <a href="Announcements.html">Announcements</a>
+            <a href="Discussion.html">Discussion Forums</a>
+            <a href="Resources.html">Resources</a>
+        </nav>
+    </header>
+    <img src="OIP.jfif" alt="" class="dot">
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" ></button>
+  
+        <div id="myDropdown" class="dropdown-content">
+          <a href="profile.html">PROFILE</a>
+          <a href="#about">SETTINGS</a>
+          <a href="cnx.html">LOG OUT</a>
+        </div>
+      </div>
+
+    <div class="meeting-container">
+        <div class="meeting-card">
+            <h3>MR RIADH KAMOUN</h3>
+            <p>Qualified professor</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>OMAR DAGUDEGUI</h3>
+            <p>Assistant</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>NAJEM JLASSI</h3>
+            <p>Frontend Developer</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>YOUSSEF GHNIYA</h3>
+            <p>JavaScript expert</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>MICHAEL ANGELO</h3>
+            <p>Backend Developer</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>YASSIN BN AMMAR</h3>
+            <p>Manchester united</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>PASCAL</h3>
+            <p>Smart Developer</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+        <div class="meeting-card">
+            <h3>YASSIN NFISSI</h3>
+            <p>Question Specialist</p><br>
+            <p> CONNECT : <a href="msg.html"> MSG</a></p>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+  
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches(".dropbtn")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+              }
+            }
+          }
+        };
+      </script>
+</body>
+</html>
